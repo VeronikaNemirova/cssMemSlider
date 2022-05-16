@@ -9,7 +9,14 @@ body {
     width: 100%;
     margin: 0;
 }
-
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Inconsolata;
+    font-size: 28px;
+    color: yellow;
+}
 .csslider1 {
 
     position: relative;
@@ -430,6 +437,9 @@ ul {
 }
 
 @media screen and (max-width: 768px) {
+    header {
+        font-size: 1em;
+    }
     .container {
         flex-direction: column-reverse;
         font-size: 1em;
