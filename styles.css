@@ -1,0 +1,469 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+    background: linear-gradient(to bottom, #74ABE2, #5563DE);
+    background-repeat: no-repeat;
+    width: 100%;
+    margin: 0;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Inconsolata;
+    font-size: 28px;
+    color: yellow;
+}
+.csslider1 {
+
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.csslider1>.cs_anchor {
+    display: none;
+}
+
+.csslider1>ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    font-size: 0;
+    line-height: 0;
+    margin: 40px auto;
+    padding: 0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.csslider1>div>div {
+    z-index: 1;
+    font-family: Gloria Hallelujah;
+    font-size: 20px;
+    padding: 0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.csslider1>ul>li.img img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.csslider1>ul>li.img {
+    font-size: 0pt;
+}
+
+.csslider1>ul>li {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-size: 15px;
+    font-size: initial;
+    line-height: normal;
+    white-space: normal;
+    vertical-align: top;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.csslider1>div>div>p {
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+    line-height: normal;
+    white-space: normal;
+    vertical-align: top;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.csslider1 .cs_lnk {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    font-size: 0pt;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.csslider1>ul>li.img,
+.csslider1>.cs_bullets,
+.csslider1>.cs_play_pause {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+.cs_bullets>label {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.cs_bullets>label>.cs_thumb {
+    visibility: hidden;
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
+    line-height: 0;
+    left: -55px;
+    top: -48px;
+}
+
+.cs_bullets>label>.cs_thumb>img {
+    max-width: none;
+}
+
+.csslider1>ul>li.num0 {
+    left: 0%;
+}
+
+.csslider1>ul>li.num1 {
+    left: 100%;
+}
+
+.csslider1>ul>li.num2 {
+    left: 200%;
+}
+
+.csslider1>ul>li.num3 {
+    left: 300%;
+}
+
+.csslider1>div>div>p.num0 {
+    left: 0%;
+}
+
+.csslider1>div>div>p.num1 {
+    left: 100%;
+}
+
+.csslider1>div>div>p.num2 {
+    left: 200%;
+}
+
+.csslider1>div>div>p.num3 {
+    left: 300%;
+}
+
+.csslider1>#cs_slide1_0:checked~ul>li,
+.csslider1>#cs_pause1_0:checked~ul>li {
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    transform: translateX(0%);
+}
+
+.csslider1>#cs_slide1_1:checked~ul>li,
+.csslider1>#cs_pause1_1:checked~ul>li {
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+
+.csslider1>#cs_slide1_2:checked~ul>li,
+.csslider1>#cs_pause1_2:checked~ul>li {
+    -webkit-transform: translateX(-200%);
+    -moz-transform: translateX(-200%);
+    transform: translateX(-200%);
+}
+
+.csslider1>#cs_slide1_3:checked~ul>li,
+.csslider1>#cs_pause1_3:checked~ul>li {
+    -webkit-transform: translateX(-300%);
+    -moz-transform: translateX(-300%);
+    transform: translateX(-300%);
+}
+
+
+
+.csslider1>#cs_slide1_0:checked~div>div>p,
+.csslider1>#cs_pause1_0:checked~div>div>p {
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    transform: translateX(0%);
+}
+
+.csslider1>#cs_slide1_1:checked~div>div>p,
+.csslider1>#cs_pause1_1:checked~div>div>p {
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+
+.csslider1>#cs_slide1_2:checked~div>div>p,
+.csslider1>#cs_pause1_2:checked~div>div>p {
+    -webkit-transform: translateX(-200%);
+    -moz-transform: translateX(-200%);
+    transform: translateX(-200%);
+}
+
+.csslider1>#cs_slide1_3:checked~div>div>p,
+.csslider1>#cs_pause1_3:checked~div>div>p {
+    -webkit-transform: translateX(-300%);
+    -moz-transform: translateX(-300%);
+    transform: translateX(-300%);
+}
+
+
+.csslider1>ul>li {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    opacity: 1;
+    -webkit-transition: -webkit-transform 1000ms;
+    -moz-transition: -moz-transform 1000ms;
+    transition: transform 1000ms;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    transform: scale(1);
+}
+
+
+.csslider1>.cs_bullets {
+    bottom: 20px;
+    width: 70%;
+    left: 15%;
+}
+
+.csslider1>.cs_bullets>label {
+    margin: 0 2px;
+    padding: 5px;
+    border-radius: 50%;
+    background: transparent;
+    -webkit-box-shadow: inset 0 0 0 1px #fff;
+    box-shadow: inset 0 0 0 1px #fff;
+}
+
+.csslider1>.cs_bullets>label>.cs_thumb {
+    border: 3px solid #fff;
+    margin-top: -13px;
+    -webkit-transition: opacity .3s, visibility .3s;
+    -moz-transition: opacity .3s, visibility .3s;
+    transition: opacity .3s, visibility .3s;
+}
+
+.csslider1>.cs_bullets>label>.cs_thumb:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 50%;
+    margin-left: -5px;
+    bottom: -10px;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 7px solid #fff;
+}
+
+.csslider1>.cs_bullets>label:hover>.cs_thumb {
+    opacity: 1;
+    visibility: visible;
+}
+
+.csslider1>#cs_slide1_0:checked~.container>.cs_bullets>label.num0>.cs_point,
+.csslider1>#cs_pause1_0:checked~.container>.cs_bullets>label.num0>.cs_point,
+.csslider1>#cs_slide1_1:checked~.container>.cs_bullets>label.num1>.cs_point,
+.csslider1>#cs_pause1_1:checked~.container>.cs_bullets>label.num1>.cs_point,
+.csslider1>#cs_slide1_2:checked~.container>.cs_bullets>label.num2>.cs_point,
+.csslider1>#cs_pause1_2:checked~.container>.cs_bullets>label.num2>.cs_point,
+.csslider1>#cs_slide1_3:checked~.container>.cs_bullets>label.num3>.cs_point,
+.csslider1>#cs_pause1_3:checked~.container>.cs_bullets>label.num3>.cs_point {
+    background-color: aqua;
+}
+
+@-webkit-keyframes bullet {
+
+    0%,
+    33.32333333333334% {
+        -webkit-box-shadow: none;
+        background: #fff;
+        padding: 6px;
+    }
+
+    33.333333333333336%,
+    100% {
+        -webkit-box-shadow: inset 0 0 0 1px #fff;
+        background: transparent;
+        padding: 5px;
+        margin-bottom: 0;
+    }
+}
+
+@-moz-keyframes bullet {
+
+    0%,
+    33.32333333333334% {
+        -moz-box-shadow: none;
+        background: #fff;
+        padding: 6px;
+    }
+
+    33.333333333333336%,
+    100% {
+        -moz-box-shadow: inset 0 0 0 1px #fff;
+        background: transparent;
+        padding: 5px;
+        margin-bottom: 0;
+    }
+}
+
+@keyframes bullet {
+
+    0%,
+    33.32333333333334% {
+        box-shadow: none;
+        background: #fff;
+        padding: 6px;
+    }
+
+    33.333333333333336%,
+    100% {
+        box-shadow: inset 0 0 0 1px #fff;
+        background: transparent;
+        padding: 5px;
+        margin-bottom: 0;
+    }
+}
+
+.csslider1>#cs_play1:checked~.cs_bullets>label.num0 {
+    -webkit-animation: bullet 12300ms infinite -1000ms;
+    -moz-animation: bullet 12300ms infinite -1000ms;
+    animation: bullet 12300ms infinite -1000ms;
+}
+
+.csslider1>#cs_play1:checked~.cs_bullets>label.num1 {
+    -webkit-animation: bullet 12300ms infinite 3100ms;
+    -moz-animation: bullet 12300ms infinite 3100ms;
+    animation: bullet 12300ms infinite 3100ms;
+}
+
+.csslider1>#cs_play1:checked~.cs_bullets>label.num2 {
+    -webkit-animation: bullet 12300ms infinite 7200ms;
+    -moz-animation: bullet 12300ms infinite 7200ms;
+    animation: bullet 12300ms infinite 7200ms;
+}
+
+.csslider1>#cs_play1:checked~.cs_bullets>label>.cs_point,
+.csslider1>.pause:checked~.cs_bullets>label>.cs_point {
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
+}
+
+.csslider1>.slide:checked~.cs_bullets>label>.cs_point,
+.csslider1>.pause:checked~.cs_bullets>label>.cs_point {
+    -webkit-animation: none;
+    -moz-animation: none;
+    -ms-animation: none;
+    -o-animation: none;
+    animation: none;
+}
+
+
+
+ul {
+    width: 500px;
+    height: 500px;
+}
+
+.cs_bullets {
+    overflow: hidden;
+    justify-content: flex-end;
+}
+
+.cs_point {
+    height: 25px;
+    width: 25px;
+    background-color: #0000FF;
+    border: 2px solid #0000FF;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.cs_point:hover {
+    background-color: aqua;
+}
+
+.all-text {
+    height: 150px;
+    width: 380px;
+    overflow: hidden;
+    position: relative;
+}
+
+.text {
+    margin: 0;
+    -webkit-transition: -webkit-transform 1000ms;
+    -moz-transition: -moz-transform 1000ms;
+    transition: transform 1000ms;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 500px;
+    margin: 20px auto;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        font-size: 1em;
+    }
+    .container {
+        flex-direction: column-reverse;
+        font-size: 1em;
+        width: 320px;
+    }
+
+    ul {
+        width: 320px;
+    }
+
+    .all-text {
+        width: 320px;
+        height: 320px;
+    }
+
+    .csslider1>ul>li.img img {
+
+        height: 320px;
+
+    }
+
+
+    .cs_bullets {
+        margin: 0 auto;
+    }
+
+}
