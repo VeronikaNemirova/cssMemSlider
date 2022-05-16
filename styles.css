@@ -433,9 +433,20 @@ ul {
     .container {
         flex-direction: column-reverse;
         font-size: 1em;
-        
+        width: 320px; 
     }
-    
+    ul {
+        width: 320px;
+    }
+    .all-text {
+        width: 320px;
+        height: 320px;
+    }
+    .csslider1>ul>li.img img {
+        
+        height: 320px;
+       
+    }
 
 
 .cs_bullets {
